@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:myproject/page_answer/answer_navigator.dart';
+import 'package:myproject/form_widget/form_simple.dart';
+import 'package:myproject/form_widget/registration_form.dart';
+import 'package:myproject/api_simple/weather_api_call.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
+/*class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
@@ -39,5 +41,14 @@ class DemoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Placeholder();
+  }
+}*/
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: WeatherApiCall(),
+    );
   }
 }
