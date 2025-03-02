@@ -47,8 +47,8 @@ class _SimpleApiCallState extends State<SimpleApiCall> {
           itemBuilder: (BuildContext context, int index) {
             return ListTile(
               leading: Text('${users[index].id}'),
-              title: Text('${users[index].name}'),
-              subtitle: Text('${users[index].email}'),
+              title: Text(users[index].name),
+              subtitle: Text(users[index].email),
               trailing: Text('(${users[index].username})'),
             );
           },

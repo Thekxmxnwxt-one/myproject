@@ -6,7 +6,7 @@ import 'package:myproject/model/product_data.dart';
 class ProductFormScreen extends StatefulWidget {
   final ProductData? product; // ถ้า null แสดงว่าเป็นการเพิ่มสินค้าใหม่
 
-  const ProductFormScreen({Key? key, this.product}) : super(key: key);
+  const ProductFormScreen({super.key, this.product});
 
   @override
   _ProductFormScreenState createState() => _ProductFormScreenState();
